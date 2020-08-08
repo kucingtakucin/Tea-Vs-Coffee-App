@@ -16,7 +16,8 @@
         app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintVertical_bias="0.347"
+        android:contentDescription="@string/gelas2" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -28,7 +29,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/gelas1" />
 
     <Button
         android:id="@+id/tombol_mulai"
@@ -39,7 +41,7 @@
         android:paddingTop="10sp"
         android:paddingRight="20sp"
         android:paddingBottom="10sp"
-        android:text="MULAI"
+        android:text="@string/mulai"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
