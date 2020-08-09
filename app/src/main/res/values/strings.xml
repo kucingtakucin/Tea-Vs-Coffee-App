@@ -6,4 +6,8 @@
     <string name="gelas2">gelas2</string>
     <string name="gelas1">gelas1</string>
     <string name="mulai">MULAI</string>
+    <string name="gambar_gelas_dan_cangkir">Gambar gelas dan cangkir</string>
+    <string name="pertanyaan1">Apa yang kamu minum jika ingin relax?</string>
+    <string name="teh">TEH</string>
+    <string name="kopi">KOPI</string>
 </resources>
