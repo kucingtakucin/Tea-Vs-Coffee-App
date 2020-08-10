@@ -26,5 +26,9 @@
     <fragment
         android:id="@+id/finishFragment"
         android:name="com.android.teavscoffee.FinishFragment"
-        android:label="FinishFragment" />
+        android:label="FinishFragment" >
+        <argument
+            android:name="result"
+            app:argType="string" />
+    </fragment>
 </navigation>

@@ -16,7 +16,9 @@ class FinishFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_finish, container, false)
+        val args = arguments?.let { FinishFragmentArgs.fromBundle(it) }
         dataBinding.apply {
+            hasil.text = args?.result
             return root
         }
     }

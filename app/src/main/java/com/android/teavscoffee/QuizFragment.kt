@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.android.teavscoffee.databinding.FragmentQuizBinding
 
 class QuizFragment : Fragment() {
@@ -44,8 +45,18 @@ class QuizFragment : Fragment() {
         current++
         if (current < questions.size) {
             dataBinding.pertanyaan.text = questions[current]
-            Toast.makeText(context, "Berhasil, Tea: $teaScore, Coffee: $coffeeScore", Toast.LENGTH_SHORT).show()
-        } else
-            Toast.makeText(context, "Sudah maksimal!!! Next Fragment...", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                context,
+                "Berhasil, Tea: $teaScore, Coffee: $coffeeScore",
+                Toast.LENGTH_SHORT
+            ).show()
+        } else {
+            var result: String = ""
+            result = if (coffeeScore >= 2 && teaScore >= 2) "Kamu suka keduanya!"
+            else if (coffeeScore > 2) "Kamu adalah pecinta kopi!"
+            else "Kamu adalah pecinta teh"
+            view?.findNavController()
+                ?.navigate(QuizFragmentDirections.actionQuizFragmentToFinishFragment(result))
+        }
     }
 }
