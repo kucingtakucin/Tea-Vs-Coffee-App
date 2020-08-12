@@ -51,8 +51,7 @@ class QuizFragment : Fragment() {
                 Toast.LENGTH_SHORT
             ).show()
         } else {
-            var result: String = ""
-            result = if (coffeeScore >= 2 && teaScore >= 2) "Kamu suka keduanya!"
+            val result: String = if (coffeeScore >= 2 && teaScore >= 2) "Kamu suka keduanya!"
             else if (coffeeScore > 2) "Kamu adalah pecinta kopi!"
             else "Kamu adalah pecinta teh"
             view?.findNavController()

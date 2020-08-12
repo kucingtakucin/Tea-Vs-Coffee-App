@@ -10,4 +10,5 @@
     <string name="pertanyaan1">Apa yang kamu minum jika ingin relax?</string>
     <string name="teh">TEH</string>
     <string name="kopi">KOPI</string>
+    <string name="selamat">Selamat, kamu adalah seorang pecinta teh atau kopi</string>
 </resources>
