@@ -11,4 +11,6 @@
     <string name="teh">TEH</string>
     <string name="kopi">KOPI</string>
     <string name="selamat">Selamat, kamu adalah seorang pecinta teh atau kopi</string>
+    <string name="about">Ini adalah game teh atau kopi sederhana untuk menebak apa minuman kesukaan kamu</string>
+    <string name="about_title">About</string>
 </resources>

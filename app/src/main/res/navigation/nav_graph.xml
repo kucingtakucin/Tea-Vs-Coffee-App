@@ -33,4 +33,8 @@
             android:name="result"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.android.teavscoffee.AboutFragment"
+        android:label="AboutFragment" />
 </navigation>

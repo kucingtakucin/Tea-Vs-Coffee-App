@@ -10,17 +10,15 @@ import com.android.teavscoffee.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var dataBinding: ActivityMainBinding
-    private lateinit var navController: NavController
+    private val navController: NavController = this.findNavController(R.id.nav_host_fragment)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         dataBinding = DataBindingUtil.setContentView(this@MainActivity, R.layout.activity_main)
-        navController = this.findNavController(R.id.nav_host_fragment_container)
         NavigationUI.setupActionBarWithNavController(this@MainActivity, navController)
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        navController = this.findNavController(R.id.nav_host_fragment_container)
         return navController.navigateUp()
     }
 }

@@ -7,23 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.android.teavscoffee.databinding.FragmentFinishBinding
+import com.android.teavscoffee.databinding.FragmentAboutBinding
 
-class FinishFragment : Fragment() {
-    private lateinit var dataBinding: FragmentFinishBinding
+class AboutFragment : Fragment() {
+    private lateinit var dataBinding: FragmentAboutBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        (activity as AppCompatActivity).supportActionBar?.title = "Selesai..."
-        dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_finish, container, false)
+        (activity as AppCompatActivity).supportActionBar?.title = "About"
+        dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_about, container, false)
         dataBinding.apply {
-            hasil.text = arguments?.let {
-                FinishFragmentArgs.fromBundle(it)
-            }?.result
             return root
         }
     }
-
 }

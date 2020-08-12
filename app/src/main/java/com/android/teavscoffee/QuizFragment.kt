@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.android.teavscoffee.databinding.FragmentQuizBinding
@@ -26,6 +27,7 @@ class QuizFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        (activity as AppCompatActivity).supportActionBar?.title = "Quiz..."
         dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_quiz, container, false)
         dataBinding.apply {
             pertanyaan.text = questions[current]
