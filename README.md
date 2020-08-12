@@ -1,2 +1,2 @@
 # Tea-Vs-Coffee-App
-Ini adalah sebuah permainan sederhana bernama Tea Vs Coffee. Aplikasi ini dibuat dengan Kotlin &amp; Android Studio IDE
+Sebuah permainan sederhana bernama Tea Vs Coffee, yang akan menentukan apakah kamu seorang pecinta teh atau pecinta kopi. Aplikasi ini dibuat dengan Kotlin & Android Studio IDE 
