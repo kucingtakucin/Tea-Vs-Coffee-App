@@ -8,11 +8,15 @@
     <fragment
         android:id="@+id/introFragment"
         android:name="com.android.teavscoffee.IntroFragment"
-        android:label="fragment_intro"
-        tools:layout="@layout/fragment_intro" >
+        android:label="Game Teh atau Kopi"
+        tools:layout="@layout/fragment_intro">
         <action
             android:id="@+id/action_introFragment_to_quizFragment"
-            app:destination="@id/quizFragment" />
+            app:destination="@id/quizFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
@@ -22,6 +26,10 @@
         <action
             android:id="@+id/action_quizFragment_to_finishFragment"
             app:destination="@id/finishFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit"
             app:popUpTo="@id/introFragment"
             app:popUpToInclusive="false" />
     </fragment>
