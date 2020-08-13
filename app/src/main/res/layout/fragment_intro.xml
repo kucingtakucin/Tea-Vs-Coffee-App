@@ -16,7 +16,7 @@
             android:src="@drawable/mug_logo1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.183"
+            app:layout_constraintHorizontal_bias="0.197"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.365" />
@@ -25,8 +25,8 @@
             android:id="@+id/imageView2"
             android:layout_width="134dp"
             android:layout_height="169dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginLeft="44dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
             android:contentDescription="@string/gelas1"
             android:src="@drawable/mug_logo2"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -48,9 +48,9 @@
             android:textSize="36sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintHorizontal_bias="0.41"
             app:layout_constraintStart_toStartOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.098" />
+            app:layout_constraintVertical_bias="0.101" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
